@@ -13,3 +13,16 @@
 .ant-table.ant-table-bordered {
 	width: 100%;
 }
+
+.table-links {
+	display: flex;
+}
+
+.save-button {
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+}
+
+.cancel-button {
+	margin-left: 0 !important;
+}

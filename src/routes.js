@@ -5,18 +5,18 @@ import Deals from './pages/Deals/Deals';
 import Customers from './pages/Customers/Customers';
 import General from './pages/General/General';
 
-const Routes = () => (
+const Routes = () => (	
 	<Switch>
-		<Route path={process.env.PUBLIC_URL + '/items'}>
+		<Route path='/items'>
 			<Items />
 		</Route>
-		<Route path={process.env.PUBLIC_URL + '/deals'}>
+		<Route path='/deals'>
 			<Deals />
 		</Route>
-		<Route path={process.env.PUBLIC_URL + '/general'}>
+		<Route path='/general'>
 			<General />
 		</Route>
-		<Route path={process.env.PUBLIC_URL + '/customers'}>
+		<Route path='/customers'>
 			<Customers />
 		</Route>
 		<Route path="/">
