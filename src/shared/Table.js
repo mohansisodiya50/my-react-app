@@ -19,7 +19,7 @@ const EditableCell = ({
         <Form.Item
           name={dataIndex}
           style={{
-            margin: 0
+			margin: 0,
           }}
           rules={[
             {
@@ -98,7 +98,7 @@ const EditableTable = ({ originData, columnData }) => {
   const columns = [
 		...columnData,
     {
-      title: "operation",
+      title: "Update",
       dataIndex: "operation",
       render: (_, record) => {
         const editable = isEditing(record);
@@ -125,7 +125,7 @@ const EditableTable = ({ originData, columnData }) => {
       }
 	},
 	{
-        title: 'operation',
+        title: 'Delete',
         dataIndex: 'operation',
         render: (text, record) =>
 			data.length >= 1 ? (
@@ -173,7 +173,7 @@ const EditableTable = ({ originData, columnData }) => {
         columns={mergedColumns}
         rowClassName="editable-row"
         pagination={{
-          onChange: cancel
+			hideOnSinglePage: true
         }}
       />
     </Form>

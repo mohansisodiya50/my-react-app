@@ -10,13 +10,15 @@ function App() {
   return (
 	<BrowserRouter>
 		<Layout className="layout">
-			<Header />
-			<Layout>
-				<Sidebar />
-				<Layout.Content style={{ padding: '0 24px 24px' }}>
-				<Routes />
-			</Layout.Content>
-			</Layout>
+			<div className="wrapper">
+				<Header />
+				<Layout>
+					<Sidebar />
+					<Layout.Content>
+						<Routes />
+					</Layout.Content>
+				</Layout>
+			</div>
 
 		</Layout>
 	</BrowserRouter>

@@ -1,5 +1,7 @@
-.header, h1 {
-	height: 50px;
-	width: 100%;
-	color: white !important;
+header.ant-layout-header {
+	background-color: white;
+	box-sizing: content-box;
+	color: black;
+	border: 5px solid black;
+	text-align: start;
 }

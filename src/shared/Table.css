@@ -3,3 +3,13 @@
 	top: 100%;
 	font-size: 12px;
   }
+
+.ant-table.ant-table-bordered > .ant-table-container {
+	min-width: 200px;
+	overflow: auto;
+
+}
+
+.ant-table.ant-table-bordered {
+	width: 100%;
+}

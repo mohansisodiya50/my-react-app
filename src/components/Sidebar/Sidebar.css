@@ -12,3 +12,40 @@
 	.logo {
 	  background: rgba(255, 255, 255, 0.3);
 	}
+
+	.ant-menu-item {
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	height: 100px !important;
+	margin-top: 0 !important;
+	font-size: 16px !important;
+	}
+
+	aside.sidebar.ant-layout-sider.ant-layout-sider-dark {
+		min-width: 150px !important;
+		width: 10% !important;
+		flex: none !important;
+		height: 100%;
+	}
+
+	
+	.ant-menu-item-selected {
+		background-color: #e05c22 !important;
+	}
+	.ant-menu-item a:hover {
+		color: white !important;
+	}
+	
+	.ant-menu-item:hover {
+		background-color: #b65f3a;
+	}
+
+	ul.ant-menu.sidedrawer-menu.ant-menu-light.ant-menu-root.ant-menu-vertical {
+		background-color: black;
+	}
+
+	.ant-menu a, .ant-menu svg {
+		color: white;
+	}

@@ -24,8 +24,9 @@ const General = () => {
 		name="basic"
       >
 		<Row gutter={24}>
-			<Col span={12}>
+			<Col span={12} xs={24} sm={24} md={12} lg={12}>
 				<Form.Item
+					
 					name='shop-owner'
 					rules={[
 						{

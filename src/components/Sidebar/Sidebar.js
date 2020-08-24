@@ -4,24 +4,29 @@ import './Sidebar.css';
 import { Layout, Menu } from 'antd';
 import { Link, useLocation  } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClone, faFlag, faTags, faUser } from '@fortawesome/free-solid-svg-icons'
+
 const { Sider } = Layout;
 
 export default function LayoutM() {
 	let location = useLocation();
-	let path = location.pathname || 'general';
+
 	const renderMenu = () => (
 		<Menu
 		  className="sidedrawer-menu"
 		  defaultSelectedKeys={[location.pathname.replace(/\//g, '') || 'general']}
 		>
-		  <Menu.Item key="general">
-			<Link to="/general">
-			  <span title='General'>
-				General
-			  </span>
-			</Link>
-		  </Menu.Item>
+			<Menu.Item key="general">
+				<FontAwesomeIcon icon={faClone} size='2x' />
+				<Link to="/general">
+					<span title='General'>
+						General
+					</span>
+				</Link>
+			</Menu.Item>
 		  <Menu.Item key="items">
+		  	<FontAwesomeIcon icon={faFlag} size='2x' />
 			<Link to="/items">
 			  <span title='Items'>
 				Items
@@ -29,6 +34,7 @@ export default function LayoutM() {
 			</Link>
 		  </Menu.Item>
 		  <Menu.Item key="deals">
+		  	<FontAwesomeIcon icon={faTags} size='2x' />
 			<Link to="/deals">
 			  <span title='Deals'>
 				Deals
@@ -36,6 +42,7 @@ export default function LayoutM() {
 			</Link>
 		  </Menu.Item>
 		  <Menu.Item key="customers">
+		  	<FontAwesomeIcon icon={faUser} size='2x' />
 			<Link to="/customers">
 			  <span title='Customers'>
 				  Customers
@@ -47,7 +54,7 @@ export default function LayoutM() {
 
 	return (
 
-		<Sider width={200} className="site-layout-background">
+		<Sider className='sidebar'>
 			{renderMenu()}
 		</Sider>
 	);
